@@ -34,5 +34,23 @@ Alterações feitas:
 
 
    Grafo de fluxo:
+![Diagrama em branco](https://github.com/user-attachments/assets/2bcfe169-07ed-4167-9227-94053e001a9b)
+
+Complexidade ciclomática (M)
+
+M = E - N + 2P
+
+E (arestas) = 13
+
+N (nós) = 9
+
+P (componentes conectados) = 2
+
+M = 13 - 9 + (2*2)
+
+M = 4 + 4 = 8
+
+Caminhos possíveis 4-1-3-5-6-9 4-1-2-3-5-8-9 4-1-3-5-6-8-9 4-1-3-5-6-7-8-9 4-1-3-5-8-9 4-1-3-5-6-7-9
+   
 
    
