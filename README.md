@@ -1,4 +1,10 @@
-Alterações:
+Erros encontrados:
+1) Os catchs não realizam nenhuma função no codigo.
+2) Conexoes não fechadas
+3) Não é um erro porem pode dar erro no codigo ficar adicionando varias strings SQL ao inves de uma
+4) O nome da classe sendo instanciada pra conectar com o banco "com.mysql.Driver.Manager" está errada, deveria ser "com.mysql.cj.jdbc.Driver"
+
+Alterações feitas:
 
   1) Adicionei em uma unica String o comando SQL
   String sql = "SELECT nome from usuarios where login = ? AND senha = ?"; 
@@ -23,4 +29,10 @@ Alterações:
         e.printStackTrace();
     }
     return result;
+   
+   4) Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+
+
+   Grafo de fluxo:
+
    
